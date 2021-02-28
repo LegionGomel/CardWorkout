@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		CE6B616F25DB942700759059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B616E25DB942700759059 /* AppDelegate.swift */; };
 		CE6B617125DB942700759059 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B617025DB942700759059 /* SceneDelegate.swift */; };
-		CE6B617325DB942700759059 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B617225DB942700759059 /* ViewController.swift */; };
 		CE6B617625DB942700759059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6B617425DB942700759059 /* Main.storyboard */; };
 		CE6B617825DB942700759059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6B617725DB942700759059 /* Assets.xcassets */; };
 		CE6B617B25DB942700759059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6B617925DB942700759059 /* LaunchScreen.storyboard */; };
+		CE6B618525DB947E00759059 /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B618425DB947E00759059 /* CardSelectionVC.swift */; };
+		CE6B618D25DBB5DA00759059 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B618C25DBB5DA00759059 /* Deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE6B616B25DB942700759059 /* CardWorkout-SeanAllen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CardWorkout-SeanAllen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6B616E25DB942700759059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE6B617025DB942700759059 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE6B617225DB942700759059 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE6B617525DB942700759059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE6B617725DB942700759059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE6B617A25DB942700759059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE6B617C25DB942700759059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE6B618425DB947E00759059 /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
+		CE6B618C25DBB5DA00759059 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				CE6B616E25DB942700759059 /* AppDelegate.swift */,
 				CE6B617025DB942700759059 /* SceneDelegate.swift */,
-				CE6B617225DB942700759059 /* ViewController.swift */,
+				CE6B618425DB947E00759059 /* CardSelectionVC.swift */,
+				CE6B618C25DBB5DA00759059 /* Deck.swift */,
 				CE6B617425DB942700759059 /* Main.storyboard */,
 				CE6B617725DB942700759059 /* Assets.xcassets */,
 				CE6B617925DB942700759059 /* LaunchScreen.storyboard */,
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE6B617325DB942700759059 /* ViewController.swift in Sources */,
+				CE6B618D25DBB5DA00759059 /* Deck.swift in Sources */,
 				CE6B616F25DB942700759059 /* AppDelegate.swift in Sources */,
 				CE6B617125DB942700759059 /* SceneDelegate.swift in Sources */,
+				CE6B618525DB947E00759059 /* CardSelectionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +290,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "CardWorkout-SeanAllen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -294,6 +299,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yuriershov.CardWorkout-SeanAllen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,7 +310,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "CardWorkout-SeanAllen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,6 +319,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yuriershov.CardWorkout-SeanAllen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
